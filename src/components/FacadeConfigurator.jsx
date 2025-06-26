@@ -13,6 +13,9 @@ export const sectionOptions = [
     img: "https://alkupe.ru/upload/resize_cache/iblock/cf4/300_300_2/cf488f5100c6b43e6afd9a6c2124cdfe.jpg",
     anodir: [2841, 2843],
     price: 2400,
+    hardware: {
+      handle: ["r1", "r2"],
+    },
   },
   {
     id: 2836,
@@ -20,6 +23,9 @@ export const sectionOptions = [
     img: "https://alkupe.ru/upload/resize_cache/iblock/1b7/300_300_2/1b7023b297866c4062daf5a360194d79.jpg",
     anodir: [2841, 2842, 2843, 2844, 2890],
     price: 2600,
+    hardware: {
+      hinge: ["h1", "h2"],
+    },
   },
   {
     id: 2837,
@@ -27,6 +33,10 @@ export const sectionOptions = [
     img: "https://alkupe.ru/upload/resize_cache/iblock/60b/300_300_2/60b0e1000161aa6facbbb5ac90b46a55.jpg",
     anodir: [2841, 2842, 2890],
     price: 2500,
+    hardware: {
+      handle: ["r3"],
+      hinge: ["h3", "h4"],
+    },
   },
   {
     id: 2885,
@@ -156,46 +166,74 @@ export const fillingOptions = [
 // Фурнитура (Hardware)
 export const hardwareOptions = [
   {
+    id: "r1",
+    name: "Ручка дуга металл 128 мм.",
+    img: "https://игангрупп.рф/upload/resize_cache/iblock/020/100_100_2/020c638cc8c4cef104d9fc50940b89d4.jpg",
+    type: "handle",
+    price: 45,
+  },
+  {
+    id: "r2",
+    name: "Ручка алюминий 128 мм.",
+    img: "https://игангрупп.рф/upload/resize_cache/iblock/092/100_100_2/0924495666cc493f657ff232619e558f.jpg",
+    type: "handle",
+    price: 50,
+  },
+  {
+    id: "r3",
+    name: "Ручка рейлинговая 128 мм.",
+    img: "https://игангрупп.рф/upload/resize_cache/iblock/acb/100_100_2/acb192e56a09b4547f9bcf04a469eb3d.jpg",
+    type: "handle",
+    price: 48,
+  },
+  {
+    id: "r4",
+    name: "Ручка рейлинговая 192 мм.",
+    img: "https://игангрупп.рф/upload/resize_cache/iblock/864/100_100_2/86455850c0827ee3da48c3f3537d3cfd.jpg",
+    type: "handle",
+    price: 52,
+  },
+  {
+    id: "r5",
+    name: "Ручка кнопка металл",
+    img: "https://игангрупп.рф/upload/resize_cache/iblock/b9f/100_100_2/b9f000ddbb55efe5efff9c8112d4cb44.jpg",
+    type: "handle",
+    price: 30,
+  },
+  {
     id: "h1",
-    name: "Ручка дуга 128 мм",
-    img: "https://alkupe.ru/upload/resize_cache/iblock/020/300_300_2/020c638cc8c4cef104d9fc50940b89d4.jpg",
-    type: "handle",
-    price: 120,
-  },
-  {
-    id: "h2",
-    name: "Ручка алюминий 128 мм",
-    img: "https://alkupe.ru/upload/resize_cache/iblock/092/300_300_2/0924495666cc493f657ff232619e558f.jpg",
-    type: "handle",
-    price: 130,
-  },
-  {
-    id: "h3",
-    name: "Ручка рейл. 128 мм",
-    img: "https://alkupe.ru/upload/resize_cache/iblock/acb/300_300_2/acb192e56a09b4547f9bcf04a469eb3d.jpg",
-    type: "handle",
-    price: 150,
-  },
-  {
-    id: "h4",
-    name: "Ручка рейл. 192 мм",
-    img: "https://alkupe.ru/upload/resize_cache/iblock/864/300_300_2/86455850c0827ee3da48c3f3537d3cfd.jpg",
-    type: "handle",
-    price: 170,
-  },
-  {
-    id: "h5",
-    name: "Петля узкая АМ",
-    img: "https://alkupe.ru/upload/resize_cache/iblock/fdf/300_300_2/fdf8011f308156f1ca4dab6e1c495d15.jpg",
+    name: "Петля для широкого алюминиевого профиля накладная Lama",
+    img: "https://игангрупп.рф/upload/resize_cache/iblock/6a0/100_100_2/6a0361b1a68c07fd95e96fa08cff6e6b.JPG",
     type: "hinge",
     price: 90,
   },
   {
-    id: "h6",
-    name: "Петля узкая вкладн.",
-    img: "https://alkupe.ru/upload/resize_cache/iblock/733/300_300_2/73341676dd4d8ca3b87b76fd9a106f46.jpg",
+    id: "h2",
+    name: "Петля для широкого алюминиевого профиля накладная Боярд",
+    img: "https://игангрупп.рф/upload/resize_cache/iblock/5dc/100_100_2/5dc5435d9b9095e61bd858e1d42adc48.jpg",
+    type: "hinge",
+    price: 87,
+  },
+  {
+    id: "h3",
+    name: "Петля для узкого алюминиевого профиля с амортизатором накладная Боярд",
+    img: "https://игангрупп.рф/upload/resize_cache/iblock/fdf/100_100_2/fdf8011f308156f1ca4dab6e1c495d15.jpg",
+    type: "hinge",
+    price: 92,
+  },
+  {
+    id: "h4",
+    name: "Петля для узкого алюминиевого профиля с амортизатором вкладная Боярд",
+    img: "https://игангрупп.рф/upload/resize_cache/iblock/733/100_100_2/73341676dd4d8ca3b87b76fd9a106f46.jpg",
     type: "hinge",
     price: 95,
+  },
+  {
+    id: "h5",
+    name: "Петля для узкого алюминиевого профиля накладная Lama",
+    img: "https://игангрупп.рф/upload/resize_cache/iblock/39f/100_100_2/39fea62b2f7e814a65db2090d9010a08.JPG",
+    type: "hinge",
+    price: 91,
   },
 ];
 
@@ -217,7 +255,6 @@ export default function FacadeConfigurator() {
       : anodirOptions;
   }, [section]);
 
-
   // ---- handlers ----
   const addToCart = () => {
     // Здесь можно отправить на backend
@@ -233,9 +270,24 @@ export default function FacadeConfigurator() {
     alert("Добавлено в корзину!");
   };
 
-  // ---- separate hardware lists ----
-  const handleOptions = hardwareOptions.filter((h) => h.type === "handle");
-  const hingeOptions = hardwareOptions.filter((h) => h.type === "hinge");
+  const selectedSection = sectionOptions.find((s) => s.id === section);
+
+  const handleOptions = useMemo(() => {
+    if (!selectedSection?.hardware?.handle)
+      return hardwareOptions.filter((h) => h.type === "handle");
+    return hardwareOptions.filter(
+      (h) =>
+        h.type === "handle" && selectedSection.hardware.handle.includes(h.id)
+    );
+  }, [section]);
+
+  const hingeOptions = useMemo(() => {
+    if (!selectedSection?.hardware?.hinge)
+      return hardwareOptions.filter((h) => h.type === "hinge");
+    return hardwareOptions.filter(
+      (h) => h.type === "hinge" && selectedSection.hardware.hinge.includes(h.id)
+    );
+  }, [section]);
 
   return (
     <div className="grid lg:grid-cols-[1fr_320px] gap-8">

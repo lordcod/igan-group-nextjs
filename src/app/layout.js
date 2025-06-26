@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layouts/Header";
+import Footer from "@/components/layouts/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,11 +33,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ИГАН Групп — мебельные и фасадные решения",
-    description:
-      "Модульные алюминиевые фасады и онлайн-конфигураторы.",
+    description: "Модульные алюминиевые фасады и онлайн-конфигураторы.",
   },
 };
-
 
 export default function RootLayout({ children }) {
   return (
@@ -43,7 +43,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
